@@ -1,7 +1,9 @@
+basic.showString("Hello!")
 cbit_小车类.CarCtrlSpeed(cbit_小车类.CarState.Car_Run, 0)
 basic.showIcon(IconNames.Happy)
 if (!(input.buttonIsPressed(Button.A))) {
     cbit_小车类.CarCtrlSpeed(cbit_小车类.CarState.Car_Run, 0)
+    basic.showString("home")
 }
 basic.forever(function () {
     if (cbit_小车类.Line_Sensor(cbit_小车类.enPos.LeftState, cbit_小车类.enLineState.Black) && cbit_小车类.Line_Sensor(cbit_小车类.enPos.RightState, cbit_小车类.enLineState.Black)) {
