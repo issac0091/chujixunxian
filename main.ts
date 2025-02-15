@@ -6,7 +6,7 @@ if (!(input.buttonIsPressed(Button.A))) {
     basic.showString("home")
 }
 basic.forever(function () {
-    basic.showNumber(input.acceleration(Dimension.Strength))
+	
 })
 basic.forever(function () {
     if (cbit_小车类.Line_Sensor(cbit_小车类.enPos.LeftState, cbit_小车类.enLineState.Black) && cbit_小车类.Line_Sensor(cbit_小车类.enPos.RightState, cbit_小车类.enLineState.Black)) {
